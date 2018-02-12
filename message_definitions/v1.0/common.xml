@@ -4038,5 +4038,39 @@
       <field type="uint8_t" name="target_component">component ID of the target</field>
       <field type="uint16_t" name="sequence">sequence number (must match the one in LOGGING_DATA_ACKED)</field>
     </message>
+    <!-- Beacon msg-->
+    <message id="280" name="BEACON_STATUS">
+      <description>Beacon Status</description>
+      <field type="uint64_t" name="time_usec">Timestamp (microseconds, synced to UNIX time or since system boot)</field>
+      <field type="float" name="health">health</field>
+      <field type="uint8_t" name="count">beacon count</field>
+      <field type="uint32_t" name="D0" units="mm">D0</field>
+      <field type="uint32_t" name="D1" units="mm">D1</field>
+      <field type="uint32_t" name="D2" units="mm">D2</field>
+      <field type="uint32_t" name="D3" units="mm">D3</field>
+      <field type="uint32_t" name="pos_x" units="mm">PosX</field>
+      <field type="uint32_t" name="pos_y" units="mm">PosY</field>
+      <field type="uint32_t" name="pos_z" units="mm">PosZ</field>
+    </message>
+    <message id="281" name="BEACON_CONFIG">
+      <description>Beacon config</description>
+      <field type="uint8_t" name="beacon_id">beacon id</field>
+      <field type="uint8_t" name="beacon_count">beacon count</field>
+      <field type="uint32_t" name="x" units="mm">beacon pos x</field>
+      <field type="uint32_t" name="y" units="mm">beacon pos y</field>
+      <field type="uint32_t" name="z" units="mm">beacon pos z</field>
+    </message>
+    <message id="282" name="BEACON_DISTANCE">
+      <description>Beacon distance</description>
+      <field type="uint8_t" name="beacon_id">beacon id</field>
+      <field type="uint32_t" name="distance" units="mm">beacon distance</field>
+    </message>
+    <message id="283" name="BEACON_VEHICLE_POSITION">
+      <description>Beacon Vehicle Position</description>
+      <field type="uint32_t" name="x" units="mm">vehcile pos x</field>
+      <field type="uint32_t" name="y" units="mm">vehcile pos y</field>
+      <field type="uint32_t" name="z" units="mm">vehcile pos z</field>
+      <field type="uint16_t" name="position_error" units="mm">vehcile pos error</field>
+    </message>
   </messages>
 </mavlink>
