@@ -4248,13 +4248,13 @@
       <field type="uint64_t" name="time_usec">Timestamp (microseconds, synced to UNIX time or since system boot)</field>
       <field type="float" name="health">health</field>
       <field type="uint8_t" name="count">beacon count</field>
-      <field type="uint32_t" name="D0" units="mm">D0</field>
-      <field type="uint32_t" name="D1" units="mm">D1</field>
-      <field type="uint32_t" name="D2" units="mm">D2</field>
-      <field type="uint32_t" name="D3" units="mm">D3</field>
-      <field type="uint32_t" name="pos_x" units="mm">PosX</field>
-      <field type="uint32_t" name="pos_y" units="mm">PosY</field>
-      <field type="uint32_t" name="pos_z" units="mm">PosZ</field>
+      <field type="float" name="D0" units="mm">D0</field>
+      <field type="float" name="D1" units="mm">D1</field>
+      <field type="float" name="D2" units="mm">D2</field>
+      <field type="float" name="D3" units="mm">D3</field>
+      <field type="float" name="pos_x" units="mm">PosX</field>
+      <field type="float" name="pos_y" units="mm">PosY</field>
+      <field type="float" name="pos_z" units="mm">PosZ</field>
     </message>
     <message id="281" name="BEACON_CONFIG">
       <description>Beacon config</description>
